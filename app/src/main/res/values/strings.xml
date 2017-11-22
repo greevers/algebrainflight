@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">Algebra in Flight</string>
+    <string name="placeholder_text">Placeholder</string>
+    <string name="play">PLAY</string>
+    <string name="leaderboard">LEADERBOARD</string>
+    <string name="settings">SETTINGS</string>
+    <string name="reset_leaderboard_title">Reset Leaderboard?</string>
+    <string name="confirm_reset_leaderboard">Confirm Reset Leaderboard?</string>
+    <string name="reset_leaderboard_desc">Use two fingers to draw lines\nfrom the top dots to the bottom\nat the same time.</string>
+    <string name="ready">READY</string>
+    <string name="set">SET</string>
+    <string name="go">GO!</string>
+    <string name="score">Score:</string>
+    <string name="complete">COMPLETE!</string>
+    <string name="enter_initials">Congratulations!\nEnter your initials</string>
+    <string name="settings_topics">sgreevers.depaul.csc472.algebrainflight.SETTINGS_TOPICS</string>
+    <string name="settings_game_modes">sgreevers.depaul.csc472.algebrainflight.SETTINGS_GAME_MODES</string>
+    <string name="version">v0.0.1</string>
 </resources>

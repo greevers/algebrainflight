@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sgreevers.depaul.csc472.algebrainflight.MainGameplayActivity">
+
+    <TextView
+        android:id="@+id/question_textview"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/material_teal_500"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <sgreevers.depaul.csc472.algebrainflight.GameplayView
+        android:id="@+id/gameplay_surfaceview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question_textview" />
+
+    <TextView
+        android:id="@+id/score_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/score"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/gameplay_surfaceview"
+        app:layout_constraintTop_toTopOf="@+id/countdown_textview" />
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/flight_control_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/flight_control_view"
+        android:layout_width="match_parent"
+        android:layout_height="192dp"
+        android:contentDescription="@string/placeholder_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/cockpit" />
+
+    <ImageView
+        android:id="@+id/joystick_imageview"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="@string/placeholder_text"
+        app:layout_constraintBottom_toBottomOf="@+id/flight_control_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/joystick" />
+
+    <TextView
+        android:id="@+id/starter_textview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/material_light_blue_100"
+        android:gravity="center"
+        android:text="@string/ready"
+        android:textColor="@android:color/black"
+        android:textSize="36sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="@+id/gameplay_surfaceview"
+        app:layout_constraintStart_toStartOf="@+id/gameplay_surfaceview"
+        app:layout_constraintTop_toTopOf="@+id/gameplay_surfaceview" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="232dp"
+        android:layout_height="74dp"
+        android:contentDescription="@string/placeholder_text"
+        app:layout_constraintBottom_toTopOf="@+id/flight_control_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/propeller" />
+
+    <TextView
+        android:id="@+id/countdown_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/black"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/gameplay_surfaceview"
+        app:layout_constraintTop_toTopOf="@+id/gameplay_surfaceview" />
+
+</android.support.constraint.ConstraintLayout>
